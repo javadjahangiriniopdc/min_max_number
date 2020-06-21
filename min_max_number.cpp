@@ -6,21 +6,39 @@ using namespace std;
 
 int main()
 {
-    //10 add ro begirg va min
-    int n;
+    ////10 add ro begirg va min
+    //int n;
+    //int min,max;
+    ////yek add 
+    //cin >> n;
+    //min = n;
+    //max = n;
+    ////9 tay bagieh
+    //for (int i = 0;i < 9;i++)
+    //{
+    //    cin >> n;
+    //    if (n < min)
+    //        min = n;
+    //    if (n > max)
+    //        max = n;
+    //}
     int min,max;
-    cin >> n;
-    min = n;
-    max = n;
-    for (int i = 0;i < 9;i++)
+    int a[10];
+    for (int i = 0;i <= 9;i++)
     {
-        cin >> n;
-        if (n < min)
-            min = n;
-        if (n > max)
-            max = n;
+        cin >> a[i];
     }
+    min = a[0];
+    max = a[0];
 
+    for (int i = 0;i <= 8;i++)
+    {
+        if (a[i] < min)
+            min = a[i];
+
+        if (a[i] > max)
+            max = a[i];
+    }
     cout << "min:" << min << endl << "max:" << max << endl;;
 }
 
